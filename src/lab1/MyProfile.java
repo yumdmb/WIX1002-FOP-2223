@@ -1,7 +1,7 @@
 
 package lab1;
 
-public class l1q2 {
+public class MyProfile {
 
     public static void main(String[] args) 
     {
