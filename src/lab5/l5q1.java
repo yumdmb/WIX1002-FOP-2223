@@ -1,13 +1,34 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+    
 package lab5;
 
-/**
- *
- * @author USER
- */
+import java.util.Scanner;
+import java.util.Random;
+
 public class l5q1 {
-    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Random rng = new Random();
+        int num;
+        System.out.print("Enter number of students: ");
+        num = sc.nextInt();
+        int[] score = new int[num];
+        int high = 0, low = 100, sum = 0;
+        for (int i = 0; i < num; i++) {
+            score[i] = rng.nextInt(101);
+            System.out.printf("Student %d score is %d\n", i + 1, score[i]);
+            sum+=score[i];
+        }
+        for (int j = 0; j < num; j++) {
+            if (score[j] > high){
+                high = score[j];
+            }
+            if (score[j] < low){
+                low = score[j];
+            }
+        }
+        double avg = (double)sum/num;
+        System.out.println("\nHighest score: " + high);
+        System.out.println("Lowest score: " + low);
+        System.out.println("Average score: " + avg);
+    }
 }
