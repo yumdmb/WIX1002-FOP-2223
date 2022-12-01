@@ -6,15 +6,15 @@ import java.util.Random;
 
 public class l5q1 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        Random rng = new Random();
+        Scanner keyboard = new Scanner(System.in);
+        Random rdm = new Random();
         int num;
         System.out.print("Enter number of students: ");
-        num = sc.nextInt();
+        num = keyboard.nextInt();
         int[] score = new int[num];
         int high = 0, low = 100, sum = 0;
         for (int i = 0; i < num; i++) {
-            score[i] = rng.nextInt(101);
+            score[i] = rdm.nextInt(101);
             System.out.printf("Student %d score is %d\n", i + 1, score[i]);
             sum+=score[i];
         }
