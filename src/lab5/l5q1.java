@@ -30,5 +30,7 @@ public class l5q1 {
         System.out.println("\nHighest score: " + high);
         System.out.println("Lowest score: " + low);
         System.out.println("Average score: " + avg);
+
+        keyboard.close();
     }
 }

@@ -5,10 +5,10 @@ import java.util.Scanner;
 
 class l3q3 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
         double sales, commission;
         System.out.print("Enter sales: ");
-        sales = sc.nextDouble();
+        sales = keyboard.nextDouble();
         if (sales > 1000) {
             commission = sales * 0.125;
         } else if (sales > 500) {
@@ -19,5 +19,7 @@ class l3q3 {
             commission = sales * 0.05;
         }
         System.out.printf("Commission is %.2f", commission);
+
+        keyboard.close();
     }
 }

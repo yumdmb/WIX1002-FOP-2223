@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class l4q7 {
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
         int N, n =1;
         double M, P, i, total_interest = 0;
         double C, L, R;
@@ -24,13 +24,14 @@ public class l4q7 {
         */
         
         System.out.print("Enter principal amount: ");
-        P = in.nextDouble();
+        P = keyboard.nextDouble();
         
         System.out.print("Enter interest in %: ");
-        i = in.nextDouble();
+        i = keyboard.nextDouble();
         
         System.out.print("Enter total number of month(s): ");
-        N = in.nextInt();
+        N = keyboard.nextInt();
+        keyboard.close();
         
         M = ( (P * i / (12 * 100)) / (1 - Math.pow((1 + i / (12 * 100)),(-N))) );
         
@@ -64,6 +65,6 @@ public class l4q7 {
             System.out.printf("%18.2f", total_interest);
 
             System.out.println();
-        }
+        }  
     }
 }

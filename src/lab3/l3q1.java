@@ -14,6 +14,7 @@ public class l3q1 {
         
         System.out.print("Enter at operand : ");
          z = keyboard.next();
+         keyboard.close();
          
          char i=z.charAt(0);
          switch(i){

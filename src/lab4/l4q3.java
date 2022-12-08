@@ -5,13 +5,13 @@ import java.lang.Math;
 
 public class l4q3 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
         int score, minscore = 9999, maxscore = -1, count = 0;
         int sum = 0, sumsquare = 0;
         double avg, stddev;
         do {
             System.out.print("Enter a score: ");
-            score = sc.nextInt();
+            score = keyboard.nextInt();
             if (score < 0) {
                 break;
             }
@@ -31,6 +31,8 @@ public class l4q3 {
         System.out.println("The maximum score is " + maxscore);
         System.out.println("The average score is " + avg);
         System.out.println("The standard deviation is " + stddev);
+
+        keyboard.close();
     }
 }
     
