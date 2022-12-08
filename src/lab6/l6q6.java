@@ -1,4 +1,3 @@
-
 package lab6;
 
 public class l6q6 {
@@ -46,14 +45,3 @@ public class l6q6 {
         return true;
     }
     
-    public static boolean isEmirp(int arg) {
-        int reverse = 0;
-        
-        while(arg > 0){
-            reverse = reverse * 10 + arg % 10;
-            arg = arg / 10;
-        }
-        return isPrime(arg) && isPrime(reverse);
-    }
-    
-}
