@@ -1,16 +1,47 @@
-
 package lab6;
 
 public class l6q6 {
     public static void main(String[] args) {
-        for (int i = 1; i <= 20; i++) {
-            System.out.println(i + ": " + triangularNumber(i));
+        System.out.println("Palindromic prime");
+        for(int arg=0, i=0; i<20 ; arg++){
+            if(isPalinPrime(arg)){
+                System.out.print(arg + " ");
+                i++;
+            }
         }
+        
+        System.out.println("\nEmirp");
+        for(int arg=0, i=0; i<20 ; arg++){
+            if(isEmirp(arg)){
+                System.out.print(arg + " ");
+                i++;
+            }
+        }
+        
+        System.out.println();
     }
     
-    //Java Method that returns a triangular number(using ChatGPT)
-      public static int triangularNumber(int n) {
-        return (n * (n + 1)) / 2;
+    public static boolean isPalinPrime(int arg) {
+        return isPalin(arg) && isPrime(arg);
     }
     
-}
+    public static boolean isPalin(int arg) {
+        int argCopy = arg;
+        int reverse = 0;
+
+        while(arg > 0){
+            reverse = reverse * 10 + arg % 10;
+            arg /= 10;
+        }
+
+        return (argCopy == reverse);
+    }
+    
+    public static boolean isPrime(int arg) {
+        for (int i = 2 ; i <= Math.sqrt(arg) ; i++){
+            if (arg % i == 0) 
+                return false;
+        }
+        return true;
+    }
+    

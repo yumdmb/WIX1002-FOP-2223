@@ -15,6 +15,7 @@ public class l1q3
         System.out.println("*       *    *     *      *        *   *");
         System.out.println("*       *     *   *       *         * *");
         System.out.println("*********      ***        *          *");   
+        
     }
    
 }
