@@ -6,16 +6,16 @@ import java.util.Scanner;
 public class l4q4 {
     
     public static void main(String[] args) {
-        Scanner s = new Scanner(System.in);
+        Scanner keyboard= new Scanner(System.in);
 
         int year, input = 0;
         String str_day;
         
         System.out.print("Enter the year: ");
-        year = s.nextInt();
+        year = keyboard.nextInt();
         
         System.out.print("Enter the first day of year(Monday - Friday): ");
-        str_day = s.next();
+        str_day = keyboard.next();
         
 //        System.out.print("Enter the month to view(1 - 12): ");
 //        input = s.nextInt();
@@ -26,6 +26,8 @@ public class l4q4 {
         print_cal(input, year, str_day);
         input = 8;
         print_cal(input, year, str_day);
+
+        keyboard.close();
     }
     
     public static void print_cal(int input, int year, String str_day){

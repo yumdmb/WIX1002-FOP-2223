@@ -12,6 +12,7 @@ public class l3q6 {
         System.out.print("Enter x,y coordinates of a point by entering 2 numbers separated by space: ");
         double x = keyboard.nextDouble();
         double y = keyboard.nextDouble();
+        keyboard.close();
         double distance = Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
         if (distance <= radius) {
             System.out.printf("Point (%.2f, %.2f) is inside the circle.", x, y);

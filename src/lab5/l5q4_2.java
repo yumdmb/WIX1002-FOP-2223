@@ -42,6 +42,7 @@ public class l5q4_2 {
             }
             System.out.println();
         }
+   keyboard.close();     
    }
     
 }

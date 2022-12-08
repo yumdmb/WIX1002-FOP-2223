@@ -9,10 +9,10 @@ import java.util.Random;
 
 public class Q1_2018 {
 public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
         Random rng = new Random();
         System.out.print("Enter the number of staff: ");
-        int staff = sc.nextInt();
+        int staff = keyboard.nextInt();
         int id, idtemp;
         boolean a, b, x;
         for (int i = 0 ; i < staff ; i++){
@@ -30,5 +30,6 @@ public static void main(String[] args) {
                 System.out.println("\nWeekend Off");
             }
         }
+    keyboard.close();    
     }
 }

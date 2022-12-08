@@ -27,7 +27,7 @@ public class l3q5{
         System.out.print("Input f: ");
         f = keyboard.nextDouble();
         System.out.println();
-        
+        keyboard.close();
         
         if (((a*d)-(b*c)) == 0){
             System.out.println("The equation has no solution");

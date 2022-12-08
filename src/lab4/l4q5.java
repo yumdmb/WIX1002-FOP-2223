@@ -1,7 +1,7 @@
 
 package lab4;
 
-import java.util.Scanner;
+// import java.util.Scanner;
 import java.util.Random;
 
 public class l4q5 {

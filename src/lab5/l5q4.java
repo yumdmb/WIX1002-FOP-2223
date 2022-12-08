@@ -58,6 +58,7 @@ public class l5q4 {
             }
             System.out.println();
         }
+   keyboard.close();     
    }
     
 }

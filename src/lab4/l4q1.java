@@ -21,7 +21,7 @@ public class l4q1
                 System.out.print(i +" ");
             }
         }
-       
+    keyboard.close();   
     }
     
 }
