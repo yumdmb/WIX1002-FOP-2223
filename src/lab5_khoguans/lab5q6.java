@@ -5,12 +5,12 @@ import  java.util.*;
 public class lab5q6 {
     public static void main(String[] args) {
         int row;
-        String input;
-        boolean status = false;
+        // String input;
+        // boolean status = false;
         Scanner keyboard = new Scanner(System.in);
         System.out.print("Enter the number of row of Pascal Triangle to generate: ");
         row = keyboard.nextInt();
-        input = keyboard.nextLine();
+        // input = keyboard.nextLine();
         keyboard.close();
         int[][] triangle = new int[row][row];
 
