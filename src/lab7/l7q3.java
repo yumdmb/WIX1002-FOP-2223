@@ -3,7 +3,7 @@ package lab7;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.IOException;
+//import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
@@ -26,8 +26,10 @@ public class l7q3 {
             printer.close();
         } catch (FileNotFoundException e){
             System.out.println("File not found");
-        } catch (IOException e){
-            System.out.println("File output error");
         }
+        //  catch (IOException e){
+        //     System.out.println("File output error");
+        // }
+        //need to remove this bcs it causes error 
     }
 }
