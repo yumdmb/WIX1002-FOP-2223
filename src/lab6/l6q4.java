@@ -23,5 +23,8 @@ public static int gcd (int a, int b) {
     }
 }
 
+
 }
 
+
+//https://scienceland.info/en/algebra8/euclid-algorithm
