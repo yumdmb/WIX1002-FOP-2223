@@ -14,7 +14,7 @@ public static void main(String[] args) {
         int a =rand.nextInt(13);
         int b = rand.nextInt(13);
         System.out.println("Enter negative number to quit.");
-        System.out.print(a + " a " + b + " = ");
+        System.out.print(a + " x " + b + " = ");
         int c = keyboard.nextInt();
 
         if(c<0) {
@@ -26,7 +26,7 @@ public static void main(String[] args) {
         }
 
     }
-    System.out.println("Your score is" + score);
+    System.out.println("Your score is " + score);
     
     keyboard.close();
 } 
