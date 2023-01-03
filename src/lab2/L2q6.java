@@ -6,15 +6,16 @@ import java.util.Scanner;
 class L2q6 {
     public static void main(String[] args) 
     {
-        Scanner sc = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
         System.out.print("Enter the amount of water in grams: ");
-        double M = sc.nextDouble();
+        double M = keyboard.nextDouble();
         
         System.out.print("Enter the initial temperature in Fahrenheit: ");
-        double FI = sc.nextDouble();
+        double FI = keyboard.nextDouble();
         
         System.out.print("Enter the final temperature in Fahrenheit: ");
-        double FF = sc.nextDouble();
+        double FF = keyboard.nextDouble();
+        keyboard.close();
          
         double I = (FI - 32) *1.8;
         double F = (FF - 32) *1.8;

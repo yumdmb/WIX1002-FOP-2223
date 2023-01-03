@@ -22,5 +22,6 @@ public class l5q3 {
             }
             System.out.printf("\nTotal hours: %d\n\n", sum);
         }
+      keyboard.close();  
     }
 }

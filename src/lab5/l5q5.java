@@ -8,7 +8,7 @@ public class l5q5 {
 
     public static void main(String[] args) {
         Random rand = new Random();
-        Scanner s = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
         
 //        generates 20 random integers
         int[] arr = new int[20];
@@ -48,13 +48,13 @@ public class l5q5 {
         
 //        Get a number to search for
         System.out.print("Enter a number to search: ");
-        int num = s.nextInt();
+        int num = keyboard.nextInt();
         
 //        Using linear search
         for(int i=0 ; i<arr.length ; i++){
             if(num==arr[i]){
                 System.out.println(num + " found");
-                System.out.println("Linear Search - " + i + " loop(s)");
+                System.out.println("Linear Search - " + i + " loop(keyboard)");
                 break;
             } 
         }
@@ -80,6 +80,7 @@ public class l5q5 {
             loop_count++;
         }
         System.out.println(num + " found");
-        System.out.println("Binary Search - " + loop_count + " loop(s)");
+        System.out.println("Binary Search - " + loop_count + " loop(keyboard)");
+    keyboard.close();    
     }
 }

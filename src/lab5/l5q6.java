@@ -25,6 +25,7 @@ public class l5q6 {
             }
             System.out.println();
         }
+    keyboard.close();    
     }
 }
 
